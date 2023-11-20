@@ -11,7 +11,9 @@ Dichiariamo chi ha vinto.*/
 //Creo un'altra funzione che stabilisca se la somma ricavata sia pari o dispari.
 // Dichiaro chi ha vinto.
 
-let userNumber = parseInt(prompt("Scegli un numero pari o dispari da 1 a 5."));
+const chooseAddOrEven = prompt("Choose even or odd.");
+
+const userNumber = parseInt(prompt("Choose a number from 1 to 5."));
 console.log(userNumber);
 
 function randomNumber() {
@@ -26,13 +28,22 @@ console.log(addNumbers);
 
 function oddOrEven (addNumbers){
     if (addNumbers % 2 === 0){
-        return "Even";
+        return "even";
     } else {
-        return "Odd";
+        return "odd";
     }
 }
 
 console.log(oddOrEven(addNumbers));
+
+if (chooseAddOrEven === oddOrEven(addNumbers)){
+    console.log("You win!");
+} else {
+    console.log("You lost!");
+}
+
+
+
 
 
 
