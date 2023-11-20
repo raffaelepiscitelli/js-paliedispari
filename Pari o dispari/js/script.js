@@ -32,7 +32,7 @@ function oddOrEven (addNumbers){
     }
 }
 
-console.log(oddOrEven());
+console.log(oddOrEven(addNumbers));
 
 
 
